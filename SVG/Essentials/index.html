@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG - Essentials</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="icon" type="image/x-icon" href="../../Contenido/favicon.png">
+</head>
+<body>
+    <div class="navbar">
+        <a href="../../index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Learn Content
+            </button>
+            <div class="dropdown-content">
+              <div class="header">
+                <h2>To Learn</h2>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <a href="../../HTML/index.html"><h3>HTML</h3></a>
+                  <a href="../../HTML/Essentials/index.html">Essentials</a>
+                  <a href="#">Medium</a>
+                  <a href="#">Advanced</a>
+                </div>
+                <div class="column">
+                  <a href="../../CSS/index.html"><h3>CSS</h3></a>
+                  <a href="../../CSS/Essentials/index.html">Essentials</a>
+                  <a href="#">Medium</a>
+                  <a href="#">Advanced</a>
+                </div>
+                <div class="column">
+                  <a href="../../SVG/index.html"><h3>SVG</h3></a>
+                  <a href="../../SVG/Essentials/index.html">Essentials</a>
+                  <a href="#">Medium</a>
+                  <a href="#">Advanced</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <a href="../../about.html">About</a>
+      </div>
+
+      <h1>SVG</h1>
+      <div class="apartados">
+      <h3>How to create a circle in SVG</h3>
+      <p>To create a circle in svg we have to use &lt;svg&gt; and &lt;circle&gt; tag</p>
+      <p> For example: <br> &lt;svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"&gt;
+        <br>
+      &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/&gt;<br>&lt;/svg&gt;</p>
+      <p>Sample:</p>
+      <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /></svg>
+      </div>
+      <div class="apartados">
+        <h3>How to create a ellipse in SVG</h3>
+        <p>To create a ellipse in svg we have to use&lt;svg&gt; and &lt;ellipse&gt; tag</p>
+        <p> For example: <br> &lt;svg height="140" width="500" xmlns="http://www.w3.org/2000/svg"&gt;
+          <br>
+        &lt;ellipse rx="100" ry="50" cx="120" cy="80" style="fill:yellow;stroke:green;stroke-width:3"/&gt;<br>&lt;/svg&gt;</p>
+        <p>Sample:</p>
+        <svg height="140" width="500" xmlns="http://www.w3.org/2000/svg">
+          <ellipse rx="100" ry="50" cx="120" cy="80"
+          style="fill:yellow;stroke:green;stroke-width:3" />
+        </svg>
+      </div>
+      <div class="apartados">
+        <h3>How to create a Polygon in SVG</h3>
+        <p>To create a Polygon in svg we have to use&lt;svg&gt; and &lt;polygon&gt; tag</p>
+        <p> For example: <br> &lt;svg height="220" width="500" xmlns="http://www.w3.org/2000/svg"&gt;
+          <br>
+        &lt;polygon points="100,10 150,190 50,190" style="fill:lime;stroke:purple;stroke-width:3"/&gt;<br>&lt;/svg&gt;</p>
+        <p>Sample:</p>
+        <svg height="220" width="500" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="100,10 150,190 50,190" style="fill:lime;stroke:purple;stroke-width:3" />
+          Sorry, your browser does not support inline SVG.
+        </svg>
+      </div>
+      <div class="apartados">
+        <h3>How to create a text with no fill in SVG</h3>
+        <p>To create a Polygon in svg we have to use&lt;svg&gt; and &lt;polygon&gt; tag</p>
+        <p> For example: <br> &lt;svg height="40" width="200" xmlns="http://www.w3.org/2000/svg"&gt;
+          <br>
+        &lt;text x="5" y="30" fill="none" stroke="red" font-size="35"&gt;I love SVG!&lt;/text&gt;<br>&lt;/svg&gt;</p>
+        <p>Sample:</p>
+        <svg height="40" width="200" xmlns="http://www.w3.org/2000/svg">
+          <text x="5" y="30" fill="none" stroke="red" font-size="35">I love SVG!</text>
+          Sorry, your browser does not support inline SVG.
+        </svg>
+      </div>
+      <div class="apartados">
+        <h3>How to create a Drop Shadow</h3>
+        <p>To create a Drop Shadow in svg we have to use &lt;svg&gt; , &lt;defs&gt; , 
+          &lt;filter&gt; and &lt;rect&gt; </p>
+          <p>For example: <br>
+            &lt;svg height="110" width="110" xmlns="http://www.w3.org/2000/svg"&gt;
+            <br> &lt;defs&gt; <br> &lt;filter id="f1"&gt; &lt;rect&gt; 
+            <br> &lt;feDropShadow dx="12" dy="14" stdDeviation="1" flood-opacity="0.7"/&gt;
+            <br> &lt;/filter&gt;
+            <br> &lt;/defs&gt; <br> &lt;rect width="90" height="90" fill="yellow" filter="url(#f1)"/&gt; 
+            <br> &lt;/svg&gt;
+          </p>
+            
+          <p>Sample:</p> <br>
+          <svg height="110" width="110" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="f1">
+                <feDropShadow dx="12" dy="14" stdDeviation="1" flood-opacity="0.7"/>
+              </filter>
+            </defs>
+              <rect width="90" height="90" fill="yellow" filter="url(#f1)"/>
+            Sorry, your browser does not support inline SVG.
+          </svg>
+      </div>
+</body>
+</html>
