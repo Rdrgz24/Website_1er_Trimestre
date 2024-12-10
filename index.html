@@ -6,6 +6,11 @@
     <title>Website 4U</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="Contenido/favicon.png">
+    <script>
+        function printPage () {
+            window.print();
+        }
+    </script>
 </head>
 <body>
     <div class="navbar">
@@ -58,6 +63,8 @@
           <dd><a href="SVG/index.html"><img src="Contenido/svg-thumbnail.png" alt="SVG" style="width: 100px;"></a></dd>
         </dl>
       </div>
-
+    <footer>
+        <input type="button" value="Descargar como PDF" onclick="printPage()">
+    </footer>
 </body>
 </html>
