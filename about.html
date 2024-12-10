@@ -6,6 +6,11 @@
     <title>About</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="Contenido/favicon.png">
+    <script>
+        function printPage () {
+            window.print();
+        }
+    </script>
 </head>
 <body>
     <div class="navbar">
@@ -52,5 +57,8 @@
     <p>Do not copy, do not distribute, it would be illegal.</p>
     <p><a href="index.html" style="text-decoration: none;">GO TO HOME PAGE</a></p>
     </div>
+    <footer style="margin: 10px">
+        <input type="button" value="Descargar como PDF" onclick="printPage()">
+    </footer>
 </body>
 </html>
